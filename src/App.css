@@ -23,3 +23,26 @@
   top: 100px;
   left: 100px;
 }
+
+.botoes{
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+}
+
+.botoes button{
+  width: 25%;
+  margin-top: 20px;
+  border: 1px solid cyan;
+  background-color: cornflowerblue;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.botoes button:active{
+  position: relative;
+  top: 1px;
+}

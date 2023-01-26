@@ -50,8 +50,11 @@ function App() {
 
   return (
     <div id='page' className="App" onClick={handleClick}>
-      <button onClick={handleUndo}> Desfazer </button>
-      <button onClick={handleRedo}> Refazer </button>
+      <div className="botoes">
+        <button onClick={handleUndo}> Desfazer </button>
+        <button onClick={handleRedo}> Refazer </button>
+      </div>
+
       {list.map((item) => (
         <span key={item.clientX} className='dot' style={{left: item.clientX, top: item.clientY}}/>
       ))}
